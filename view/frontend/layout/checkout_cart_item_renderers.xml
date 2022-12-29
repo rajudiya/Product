@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/layout_generic.xsd">
+    <body> 
+        <!-- <referenceBlock name="checkout.cart.form" remove="false"/> -->
+        <referenceBlock name="checkout.cart.item.renderers">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Change_Product::cart/item/default.phtml</argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="checkout.cart.item.renderers.simple">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Change_Product::cart/item/default.phtml</argument>
+            </action>
+        </referenceBlock>
+    </body>
+</layout>
